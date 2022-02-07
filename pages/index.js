@@ -10,11 +10,7 @@ export default function Home() {
   return (
 
     <body>
-
-      <h1>Welcome to ClimateWatch.</h1>
       <Image src="/large_logo.svg" height={100} width={275} />
-
-
     </body>
 
   )
