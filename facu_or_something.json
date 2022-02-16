@@ -1,0 +1,21 @@
+
+{
+    "apiVersion": "1.0", 
+    "metadata": {
+        "name": "",
+        "location":"",
+        "shortDescription": "",
+        "fullDescription": ""
+    },
+    "data": {
+        "refresh": {
+            "lastUpdated": 20220201,
+            "frequency": ""
+        },
+        "outputs": {
+            "current": 3,
+            "historical": [1, 2, 2.5],
+            "dateRange": [20190201, 20210201, 20210201]
+      }
+    }
+  }
