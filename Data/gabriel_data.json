@@ -14,6 +14,7 @@
         },
         "outputs": {
             "current": 3,
+            "unit": "...",
             "historical": [1, 2, 2.5],
             "dateRange": [20190201, 20210201, 20210201]
       }
