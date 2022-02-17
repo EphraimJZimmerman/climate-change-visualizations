@@ -11,7 +11,7 @@ import Head from "next/head";
 //Function for converting time correctly
 //Somehow create an import for header so it doesn't have to be made in each page
 //Data navigation
-//make logo CSS animation 
+//make logo CSS animation
 
 export default function Home() {
 
@@ -21,7 +21,6 @@ export default function Home() {
       <title>R-TCI | Home</title>
       <meta name="viewport" content="width=device-width"></meta>
     </Head>
-
 
     <header className={navigationStyles.allHeader}>
       <ul className={navigationStyles.navigationMain}>
