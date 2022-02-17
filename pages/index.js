@@ -2,6 +2,7 @@
 // Understanding basic elements of HTML and CSS
 // Navigating pages!
 
+
 import styles from '../styles/Home.module.css'
 import navigationStyles from '../styles/Navigation.module.css'
 import Image from 'next/image'
