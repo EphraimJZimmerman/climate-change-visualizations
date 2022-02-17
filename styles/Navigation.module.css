@@ -1,0 +1,72 @@
+.mainButton {
+    font-size: 1rem;
+    padding: 1.2rem;
+}
+
+.navigationMain {
+    list-style-type: none;
+    display: inline;
+}
+
+.allHeader {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.backButton {
+    font-size: 1rem;
+}
+
+.dash {
+    font-size: 1.8rem;
+    display: inline;
+    color: black;
+    font-weight: normal;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.titleLarge {
+    font-size: 3rem;
+    font-weight: 500;
+    font-weight: bold;
+    color: #5a63e0;
+    padding-right: 1%;
+}
+
+.titleLarge:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.subTitle {
+    font-size: 1.8rem;
+    display: inline;
+    color: black;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 799px) {
+    .titleLarge {
+        font-size: 1.7rem;
+        font-weight: 500;
+        font-weight: bold;
+        color: #000000;
+        padding-right: 1%;
+    }
+    .subTitle {
+        font-size: 2rem;
+        display: inline;
+        color: black;
+        font-weight: normal;
+    }
+    .dash {
+        font-size: 1.7rem;
+        display: inline;
+        color: black;
+        font-weight: normal;
+}
+}
