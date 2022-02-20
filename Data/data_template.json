@@ -14,8 +14,9 @@
         },
         "outputs": {
             "current": 3,
-            "historical": [1, 2, 2.5],
-            "dateRange": [20190201, 20210201, 20210201]
+            "unit": "null",
+            "historical": [null, null, null, null, null, null, null, null, null, null, null],
+            "dateRange": [19220101, 19320101, 19420101, 19520101, 19620101, 19720101, 19820101, 19920101, 20020101, 20120101, 20220101]
       }
     }
   }

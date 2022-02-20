@@ -14,8 +14,9 @@
         },
         "outputs": {
             "current": 3,
-            "historical": [1, 2, 2.5],
+            "unit": "USD",
+            "historical": [null, null, null, null, null, null, null, null, null, null, null],
             "dateRange": [20190201, 20210201, 20210201]
       }
     }
-  }
+}
