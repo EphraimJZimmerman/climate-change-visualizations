@@ -2,21 +2,22 @@
 {
     "apiVersion": "1.0", 
     "metadata": {
-        "name": "",
-        "location":"",
-        "shortDescription": "",
-        "fullDescription": ""
+        "name": "Ocean Heat Content",
+        "location":"https://climate.nasa.gov/vital-signs/ocean-heat/",
+        "shortDescription": "The data points for Ocean Heat Content, starting in 1957.",
+        "fullDescription": "The historical array displays the heat content in zettajoules for each of the respective dates. The historicalVar is the error range at each of the respective years in dateRange"
     },
     "data": {
         "refresh": {
-            "lastUpdated": 20220201,
-            "frequency": ""
+            "lastUpdated": 20211201,
+            "frequency": "annual"
         },
         "outputs": {
             "current": 3,
-            "unit": "...",
-            "historical": [null, null, null, null, null, null, null, null, null, null, null],
-            "dateRange": [19220101, 19320101, 19420101, 19520101, 19620101, 19720101, 19820101, 19920101, 20020101, 20120101, 20220101]
+            "unit": "zettajoules",
+            "historical": [0, 52, 45, 82, 132, 188, 269, 337],
+            "historicalVar": [20, 17, 14, 11, 7, 4, 2, 2],
+            "dateRange": [19570101, 19620101, 19720101, 19820101, 19920101, 20020101, 20120101, 20211201]
       }
     }
   }
