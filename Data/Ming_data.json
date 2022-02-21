@@ -2,20 +2,20 @@
 {
     "apiVersion": "1.0", 
     "metadata": {
-        "name": "",
+        "name": "Average Global Sea Surface Temperature",
         "location":"",
-        "shortDescription": "",
-        "fullDescription": ""
+        "shortDescription": "Sea Surface Temperature data collected from the Environmental Protection Agency (EPA)",
+        "fullDescription": "Data Source: National Oceanic and Atmospheric Administration (NOAA) This graph uses the 1971 to 2000 average as a baseline for depicting change. This indicator is based on instrumental measurements of surface water temperature. Due to denser sampling and improvements in sampling design and measurement techniques, newer data are more precise than older data. The earlier trends shown by this indicator have less certainty because of lower sampling frequency and less precise sampling methods. From 1901 through 2020,temperatures rose at an average rate of 0.14°F per decade "
     },
     "data": {
         "refresh": {
-            "lastUpdated": 20220201,
-            "frequency": ""
+            "lastUpdated": 20210401,
+            "frequency": "Every year"
         },
         "outputs": {
             "current": 3,
-            "unit": "USD",
-            "historical": [null, null, null, null, null, null, null, null, null, null, null],
+            "unit": "Temperature Anomaly (F)",
+            "historical": [-0.834, -0.726, -0.258, -0.312, -0.294, -0.186, -0.006, 0.048, 0.408, 0.444, null],
             "dateRange": [19220101, 19320101, 19420101, 19520101, 19620101, 19720101, 19820101, 19920101, 20020101, 20120101, 20220101]
       }
     }
