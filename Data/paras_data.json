@@ -2,21 +2,23 @@
 {
     "apiVersion": "1.0",
     "metadata": {
-        "name": "Drought / heatwaves globally",
-        "location":"https://science2017.globalchange.gov/chapter/1/",
-        "shortDescription": "",
-        "fullDescription": ""
+        "name": "Drought",
+        "location":"https://spei.csic.es/map/maps.html#months=1#month=0#year=1955",
+        "shortDescription": "In this website it shows data from 1950 to current",
+        "fullDescription": "in this website it gives data from 1950 to currecnt. They update this
+        every month. there were over 300 data so i did an average of 10 years. so 1950-60 and so on."
     },
     "data": {
         "refresh": {
-            "lastUpdated": 20220201,
-            "frequency": ""
+            "lastUpdated": 202201,
+            "frequency": "Monthly"
         },
         "outputs": {
             "current": 3,
-            "unit": "USD",
-            "historical": [null, null, null, null, null, null, null, null, null, null, null],
-            "dateRange": [19220101, 19320101, 19420101, 19520101, 19620101, 19720101, 19820101, 19920101, 20020101, 20120101, 20220101]
+            "unit": "PDSI",
+            "historical": [ 0.155435333333333, 0.21957275, 0.181775166666667, -0.0690288333333333,
+              -0.09968, -0.22455, -0.345338863636364, -0.39265],
+            "dateRange": [1950-60, 1960-70, 1970-80, 1980-90, 1990-00, 2000-10, 2010-20, 2020-202201]
       }
     }
   }
