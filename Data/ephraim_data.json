@@ -1,21 +1,21 @@
-
 {
     "apiVersion": "1.0", 
     "metadata": {
-        "name": "", 
-        "location":"",
-        "shortDescription": "",
-        "fullDescription": ""
+        "name": "Global Emissions of Carbon Dioxide", 
+        "location": "https://icos-cp.eu",
+        "cited": "Global Carbon Project; Expert(s) (Friedlingstein et al.)",
+        "shortDescription": "This data points to carbon dioxide (CO2) emissions in billion metric tons.",
+        "fullDescription": "Surveyed by the Global Carbon Project from 1940-present (the live/most recent input in 2021 being an estimate), this dataset displays the global carbon dioxide emissions from fossil fuels and industry, which have increased dramatically in the past 80 years."
     },
     "data": {
         "refresh": {
-            "lastUpdated": 20220201,
-            "frequency": ""
+            "lastUpdated": 20220223,
+            "frequency": "Annually"
         },
         "outputs": {
-            "current": 3,
-            "unit": "USD",
-            "historical": [null, null, null, null, null, null, null, null, null, null, null],
+            "current": 36.4,
+            "unit": "Billion metric tons",
+            "historical": [null, null, 4.94, 6.47, 9.75, 16.22, 18.88, 22.57, 26.04, 34.97, null],
             "dateRange": [19220101, 19320101, 19420101, 19520101, 19620101, 19720101, 19820101, 19920101, 20020101, 20120101, 20220101]
       }
     }
