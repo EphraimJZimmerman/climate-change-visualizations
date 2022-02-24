@@ -3,7 +3,7 @@
     "apiVersion": "1.0",
     "metadata": {
         "name": "Drought",
-        "location":"https://spei.csic.es/map/maps.html#months=1#month=0#year=1955",
+        "location":"https://spei.csic.es/map/maps.html#months=1#month=0#year=2022",
         "shortDescription": "In this website it shows data from 1950 to current",
         "fullDescription": "in this website it gives data from 1950 to currecnt. They update this
         every month. there were over 300 data so i did an average of 10 years. so 1950-60 and so on."
