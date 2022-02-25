@@ -4,21 +4,19 @@
     "metadata": {
         "name": "Drought",
         "location":"https://spei.csic.es/map/maps.html#months=1#month=0#year=2022",
-        "shortDescription": "In this website it shows data from 1950 to current",
-        "fullDescription": "in this website it gives data from 1950 to currecnt. They update this
-        every month. there were over 300 data so i did an average of 10 years. so 1950-60 and so on."
+        "shortDescription": "",
+        "fullDescription": ""
     },
     "data": {
         "refresh": {
-            "lastUpdated": 202201,
+            "lastUpdated": 20220101,
             "frequency": "Monthly"
         },
         "outputs": {
             "current": 3,
-            "unit": "PDSI",
-            "historical": [ 0.155435333333333, 0.21957275, 0.181775166666667, -0.0690288333333333,
-              -0.09968, -0.22455, -0.345338863636364, -0.39265],
-            "dateRange": [1950-60, 1960-70, 1970-80, 1980-90, 1990-00, 2000-10, 2010-20, 2020-202201]
+            "unit": "SPEI",
+            "historical": [ 0.45729, -0.9095, 0.44055, -0.45425,  0.47097, -1.05054, 0.05694, -0.15988, -0.76426, 0.28303, -1.09292, -0.71919, -0.39175, 0.51665, -0.9802],
+            "dateRange": [19520101, 19570101, 19620101, 19670101, 19720101, 19760101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
       }
     }
   }
