@@ -4,8 +4,8 @@
     "metadata": {
         "name": "Drought",
         "location":"https://spei.csic.es/map/maps.html#months=1#month=0#year=2022",
-        "shortDescription": "",
-        "fullDescription": ""
+        "shortDescription": "This data points drought using the SPEI",
+        "fullDescription": "The the Standardised Precipitation-Evapotranspiration Index (SPEI) is used to measure drought severity is indicated by its intensity and duration, and can recognize the beginning and end of drought episodes from 1940 to present."
     },
     "data": {
         "refresh": {
