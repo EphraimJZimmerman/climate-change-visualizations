@@ -1,65 +1,46 @@
-
 {
-
-
-
-
-   "apiVersion": "1.0",
-
-
-   "metadata": {
-
-
-       "name": "Average Global Temperature",
-
-
-       "location":"https://climate.nasa.gov/vital-signs/sea-level/",
-
-
-       "shortDescription": "The data points for global sea levels spanning more than two decades.",
-
-
-       "fullDescription": "The average of global sea levels (in Millimeters) from 1995 to 2021 demonstrating a substantial and alarming increase attributable to carbon emissions."
-
-
-   },
-
-
-   "data": {
-
-
-       "refresh": {
-
-
-           "lastUpdated": 20220201,
-
-
-           "frequency": "annual"
-
-
-       },
-
-
-       "outputs": {
-
-
-           "current": 3,
-
-
-           "unit": "mm",
-
-
-           "historical": [9.5, 12.9, 17.3, 15.5, 17.5, 19.8, 26.6, 31.6, 34.1, 35.4, 40.4, 43.7, 44.2, 44.7, 44.9, 49.9, 51.3, 61.6, 63.4, 60.3, 80, 81.1, 82.1, 86.5, 94.6, 96.4, 100.6],
-
-
-           "dateRange": [19950716, 19960825, 19970619, 19980601, 1990801, 20000723, 20010606, 20020607, 20030604, 20040620, 20050811, 20060812, 20070606, 20080508, 20090629, 20100829, 20110603, 20120603, 20130605, 20140627, 20150619, 20160710, 20170622, 20180624, 20190705, 20200528, 20210728]
-
-
-     }
-
-
-   }
-
-
+    "apiVersion": "1.0",
+    "metadata": {
+        "name": "Average Global Temperature",
+        "location": "https://climate.nasa.gov/vital-signs/sea-level/",
+        "shortDescription": "The data points for global sea levels spanning more than two decades.",
+        "fullDescription": "The average of global sea levels (in Millimeters) from 1995 to 2021 demonstrating a substantial and alarming increase attributable to carbon emissions."
+    },
+    "data": {
+        "refresh": {
+            "lastUpdated": 20220201,
+            "frequency": "annual"
+        },
+        "outputs": {
+            "current": 2020,
+            "unit": "mm",
+            "historical": [
+                9.5,
+                35.4,
+                44.9,
+                49.9,
+                51.3,
+                96.4
+            ],
+            "dateRange": [
+                19420101,
+                19470101,
+                19520101,
+                19570101,
+                19620101,
+                19670101,
+                19720101,
+                19770101,
+                19820101,
+                19870101,
+                19920101,
+                19970101,
+                20020101,
+                20070101,
+                20120101,
+                20170101,
+                20220101
+            ]
+        }
+    }
 }
-
