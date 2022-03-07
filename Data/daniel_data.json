@@ -1,46 +1,65 @@
+
 {
-    "apiVersion": "1.0",
-    "metadata": {
-        "name": "Average Global Temperature",
-        "location": "https://climate.nasa.gov/vital-signs/sea-level/",
-        "shortDescription": "The data points for global sea levels spanning more than two decades.",
-        "fullDescription": "The average of global sea levels (in Millimeters) from 1995 to 2021 demonstrating a substantial and alarming increase attributable to carbon emissions."
-    },
-    "data": {
-        "refresh": {
-            "lastUpdated": 20220201,
-            "frequency": "annual"
-        },
-        "outputs": {
-            "current": 2020,
-            "unit": "mm",
-            "historical": [
-                9.5,
-                35.4,
-                44.9,
-                49.9,
-                51.3,
-                96.4
-            ],
-            "dateRange": [
-                19420101,
-                19470101,
-                19520101,
-                19570101,
-                19620101,
-                19670101,
-                19720101,
-                19770101,
-                19820101,
-                19870101,
-                19920101,
-                19970101,
-                20020101,
-                20070101,
-                20120101,
-                20170101,
-                20220101
-            ]
-        }
-    }
+
+
+
+
+   "apiVersion": "1.0",
+
+
+   "metadata": {
+
+
+       "name": "Average Global Temperature",
+
+
+       "location":"https://climate.nasa.gov/vital-signs/sea-level/",
+
+
+       "shortDescription": "The data points for global sea levels spanning more than two decades.",
+
+
+       "fullDescription": "The average of global sea levels (in Millimeters) from 1995 to 2021 demonstrating a substantial and alarming increase attributable to carbon emissions."
+
+
+   },
+
+
+   "data": {
+
+
+       "refresh": {
+
+
+           "lastUpdated": 20220201,
+
+
+           "frequency": "annual"
+
+
+       },
+
+
+       "outputs": {
+
+
+           "current": 2020,
+
+
+           "unit": "mm",
+
+
+           "historical": [9.5, 35.4, 44.9, 49.9, 51.3, 96.4],
+
+
+           "dateRange": [19950716, 20000723, 20050811, 20100829, 20150619, 20200528]
+
+
+     }
+
+
+   }
+
+
 }
+
