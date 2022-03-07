@@ -6,7 +6,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 
-import useSWR from 'swr';
+// import useSWR from 'swr';
 
 export default function templatePage() {
 
@@ -61,7 +61,7 @@ export default function templatePage() {
     {/* Curly braces '{}' mean it is JavaScript inside of HTML. 
     For the following, exampleVar is a variable created above. */}
 
-    <h1>'{exampleVar}' is my variable.</h1>
+    <h1>{exampleVar} is my variable.</h1>
     {/* <h1>'{data}' is my variable.</h1> */}
 
   </>)
