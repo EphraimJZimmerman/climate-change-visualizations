@@ -1,0 +1,22 @@
+
+{
+    "apiVersion": "1.0", 
+    "metadata": {
+        "name": "Arctic Sea Ice Extent",
+        "location":"https://climate.nasa.gov/vital-signs/arctic-sea-ice/",
+        "shortDescription": "Data points showing amounts of arctic ice.",
+        "fullDescription": "Data showing amount of arctic ice, in million square km, from 1979-2022 at the lowest yearly point (September)."
+    },
+    "data": {
+        "refresh": {
+            "lastUpdated": 20210901,
+            "frequency": "annual"
+        },
+        "outputs": {
+            "current": 4.72,
+            "unit": "mil km^2",
+            "historical": [6.90, 6.43, 6.91, 6.96, 5.76, 5.79, 5.12, 5.03, 4.19, 4.72],
+            "dateRange": [19790901, 19840901, 19890901, 19940901, 19990901, 20040901, 20090901, 20140901, 20190901, 20210901]
+      }
+    }
+  }
