@@ -38,7 +38,8 @@ export default function templatePage({ data }) {
   1a) The data is being printed. (on Chrome) Right click the page -> inspect -> console (on top bar) -> down click: array (7)
   2) Figure out a way to grab your specific array and output all data. You should have a title for your data name <h2>...</h2>, and paragraphs <p></p> for all subsequent info.
   2a) Maybe add smaller labels for refresh periods? Or less important information such as API name will be on the bottom is small text? Reference HTML guidelines to look up how to do stuff like that.
-  3) Output the "current" data, and an array of all historic data in a paragraph.
+  3) Output the "current" data, and an array of all historic data in a paragraph, as well as any other information you think is relevant for your page such as a description or refresh period.
+  3a) Adding a function to display dates in a readable way may be helpful. 
 
   NOTE: Not a single data point should be hard-coded in HTML. All data should be pulled from your API. For example, don't actually write the title, pull that String from the API.
 
