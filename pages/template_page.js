@@ -28,7 +28,7 @@ export default function templatePage({ data }) {
 
   1) cd to directory in command line
   2) run: 'npm run dev' and open local port that it was created deployed from your browser.
-  3) navigate to whatever the name of your file is. For example, http://localhost:3000/(carbon-emissions) (YOURS MAY NOT BE PORT 3000)
+  3) navigate to whatever the name of your file is. For example, http://localhost:3000/carbon-emissions (YOURS MAY NOT BE PORT 3000)
 
   ----------  
 
