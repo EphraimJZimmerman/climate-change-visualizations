@@ -84,7 +84,7 @@ export default function templatePage({ data }) {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://climate-change-visualizations-dkx3xwwvm-realeconomy.vercel.app/api/climate-data`)
+  const res = await fetch(`https://climate-change-visualizations.vercel.app/api/climate-data`)
   const data = await res.json()
 
   // Pass data to the page via props
