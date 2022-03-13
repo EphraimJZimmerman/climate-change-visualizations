@@ -104,7 +104,7 @@ export default function handler(req, res) {
           "frequency": "annual"
         },
         "outputs": {
-          "current": 0.444,
+          "current": 0.84,
           "unit": "Temperature Anomaly (F) with respect to the average of sea air temperature from 1971 to 2000 ",
           "historical": [-0.258, -0.546, -0.312, -0.222, -0.294, -0.42, -0.186, -0.078, -0.006, 0.21, 0.048, 0.354, 0.408, 0.3, 0.444, 0.822, null],
           "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
