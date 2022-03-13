@@ -9,14 +9,14 @@
     },
     "data": {
         "refresh": {
-            "lastUpdated": 20170901,
+            "lastUpdated": 20210901,
             "frequency": "annual"
         },
         "outputs": {
-            "current": 4.67,
+            "current": 4.92,
             "unit": "mil km^2",
             "historical": [null, null, null, null, null, null, null, null, 7.17, 6.96, 7.21, 6.63, 5.64, 4.16, 3.39, 4.67, null],
-            "dateRange": [null, null, null, null, null, null, null, null, 19820901, 19870901, 19920901, 19970901, 20020901, 20070901, 20120901, 20170901, null]
+            "dateRange": [19420101, 19470101, 19520101,19570101, 19620101, 19670101, 19720101, 19770101, 19820101,19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
       }
     }
   }

@@ -19,11 +19,33 @@ export default function handler(req, res) {
         "outputs": {
           "current": 2020,
           "unit": "mm",
-          "historical": [9.5,35.4, 44.9,49.9,  51.3, 96.4],
-          "dateRange": [19950716, 20000723,20050811,20100829,20150619, 20200528]
+          "historical": [9.5, 35.4, 44.9, 49.9, 51.3, 96.4],
+          "dateRange": [19950716, 20000723, 20050811, 20100829, 20150619, 20200528]
         }
       }
     }],
+
+    [{
+        "apiVersion": "1.0",
+        "metadata": {
+          "name": "Arctic Sea Ice Extent",
+          "location": "https://climate.nasa.gov/vital-signs/arctic-sea-ice/",
+          "shortDescription": "Data points showing amounts of arctic ice.",
+          "fullDescription": "Data showing amount of arctic ice, in million square km, from 1979-2022 at the lowest yearly point (September)."
+        },
+        "data": {
+          "refresh": {
+            "lastUpdated": 20210901,
+            "frequency": "quinquennially"
+          },
+          "outputs": {
+            "current": 4.92,
+            "unit": "mil km^2",
+            "historical": [null, null, null, null, null, null, null, null, 7.17, 6.96, 7.21, 6.63, 5.64, 4.16, 3.39, 4.67, null],
+            "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
+          }
+        }
+      } ],
 
     [{
       "apiVersion": "1.0",
@@ -158,5 +180,5 @@ export default function handler(req, res) {
           }
         }
       }],
-    ])
+  ])
 }
