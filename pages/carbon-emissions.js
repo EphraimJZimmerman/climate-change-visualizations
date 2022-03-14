@@ -53,7 +53,7 @@ function carbonEmissions({ data }) {
 
     <br></br>
 
-    <p>Data last updated {convertDate(lastUpdated)}, <u><a href={location} target="_blank">{author}</a></u></p>
+    <p>Data last updated {convertDate(lastUpdated)}, <u><a href={location} target="_blank" rel="noopener noreferrer">{author}</a></u></p>
   </>)
 }
 
