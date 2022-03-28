@@ -1,7 +1,4 @@
 
-// Understanding basic elements of HTML and CSS
-// Navigating pages
-
 
 import styles from '../styles/Home.module.css'
 import navigationStyles from '../styles/Navigation.module.css'
@@ -9,10 +6,16 @@ import Image from 'next/image'
 import Link from "next/link";
 import Head from "next/head";
 
-//Function for converting time correctly
-//Somehow create an import for header so it doesn't have to be made in each page
-//Data navigation
-//make logo CSS animation
+/*
+TASK:
+DATA VISUALIZATIONS for Week of March 28th, 2022
+
+- Navigation bar on both mobile and desktop with tabs: 
+  Index   Project Files   Data     The Club
+- Footer should be all white with black buttons, take stylistic liberties where you see fit. This is more about formatting the layout, not design.
+- Should work on both desktop and mobile. Use Navigation.module.css for styling and see guidelines for mobile formatting here: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+*/
 
 export default function Home() {
 
