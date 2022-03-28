@@ -8,7 +8,7 @@ import Head from "next/head";
 
 /*
 TASK:
-DATA VISUALIZATIONS for Week of March 28th, 2022
+NAVIGATION for Week of March 28th, 2022
 
 - Navigation bar on both mobile and desktop with tabs: 
   Index   Project Files   Data     The Club
