@@ -1,88 +1,165 @@
-
 /* 
  SPACE FOR MING'S CSS
 */
 
-/* ... */
+/* 
+    HEAD
+*/
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
 
 /* 
-END MING'S CSS
+    HEADER
+*/
+.allHeader {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  padding-top: 1rem;
+  height: auto;
+  /* border: solid red; */
+}
+.navigationMain {
+  list-style-type: none;
+  display: flex;
+  width: 600px;
+  height: 100%;
+  justify-content: space-evenly;
+  /* border: solid red; */
+  margin-left: 250px;
+  /* margin-top: 52px; */
+}
+.cross {
+  display: none;
+}
+.navMenu {
+  font-size: 1.2rem;
+  color: black;
+  width: auto;
+  /* border: solid red; */
+}
+/*--Logo--*/
+.logo {
+  list-style-type: none;
+  /* border: solid red; */
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  margin-left: 20px;
+}
+.subTitle,
+.dash {
+  display: inline;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: normal;
+}
+.titleLarge {
+  font-size: 3rem;
+  font-weight: 500;
+  font-weight: bold;
+  color: #5a63e0;
+}
+.titleLarge:hover {
+  border-bottom: black solid 2px;
+}
+
+/* 
+    FOOTER
 */
 
-
-
-
-
-
-.mainButton {
-    font-size: 1rem;
-    padding: 1.2rem;
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: WHITE;
+  position: fixed;
+  bottom: 0;
 }
-
-.navigationMain {
-    list-style-type: none;
-    display: inline;
+.footerButtonAll{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
-
-.allHeader {
-    font-size: 2rem;
-    padding-top: 1.5rem;
-}
-
-.backButton {
-    font-size: 1rem;
-}
-
-.dash {
-    font-size: 1.8rem;
-    display: inline;
-    color: black;
-    font-weight: normal;
-}
-
-.title {
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-.titleLarge {
-    font-size: 3rem;
-    font-weight: 500;
-    font-weight: bold;
-    color: #5a63e0;
-    padding-right: 1%;
-}
-
-.titleLarge:hover {
-    text-decoration: underline;
-    text-decoration-color: black;
-}
-
-.subTitle {
-    font-size: 1.8rem;
-    display: inline;
-    color: black;
-    font-weight: normal;
+.footerButton{
+  padding: 0 2px;
 }
 
 @media screen and (max-width: 799px) {
-    .titleLarge {
-        font-size: 1.7rem;
-        font-weight: 500;
-        font-weight: bold;
-        color: #000000;
-        padding-right: 1%;
-    }
-    .subTitle {
-        font-size: 2rem;
-        display: inline;
-        color: black;
-        font-weight: normal;
-    }
-    .dash {
-        font-size: 1.7rem;
-        display: inline;
-        color: black;
-        font-weight: normal;
-}
+  /* 
+    HEADER
+    */
+  .allHeader {
+    height: auto;
+  }
+  .navContainerActive {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+  }
+  .navContainer {
+    display: none;
+  }
+  .navigationMain {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    width: 50%;
+  }
+  .navMenu {
+    font-size: 2rem;
+    color: black;
+    width: auto;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    /* border: solid red; */
+  }
+  .cross {
+    display: block;
+    position: absolute;
+    color: black;
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+    top: 0;
+    right: 0;
+    padding-right: 1rem;
+  }
+  .cross:hover {
+    cursor: pointer;
+    opacity: 0.8;
+
+  }
+
+  /*--Logo--*/
+  .titleLarge {
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-weight: bold;
+    color: #000000;
+    padding-right: 1%;
+  }
+  .subTitle {
+    font-size: 2rem;
+    display: inline;
+    color: black;
+    font-weight: normal;
+  }
+  .dash {
+    font-size: 1.7rem;
+    display: inline;
+    color: black;
+    font-weight: normal;
+  }
 }

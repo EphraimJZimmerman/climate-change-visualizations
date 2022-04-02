@@ -1,5 +1,4 @@
-
-  html,
+html,
 body {
   padding: 0;
   margin: 0;
@@ -7,17 +6,15 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-
 img {
   pointer-events: none;
   /* padding-top: 100px; */
 }
 
-
 body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  padding: 100px;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  padding: 0;
   padding-top: 0rem;
   margin: 0 auto;
 }
@@ -30,13 +27,11 @@ a {
   box-sizing: border-box;
 }
 
-@media screen and (max-width : 799px) {
-
-
+@media screen and (max-width: 799px) {
   body {
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-      'Arial', sans-serif;
-    padding: 50px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+    padding: 0px;
     padding-top: 0rem;
     margin: 0 auto;
   }
