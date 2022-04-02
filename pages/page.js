@@ -21,11 +21,11 @@ DATA VISUALIZATIONS for Week of March 28th, 2022
 
 export default function page({ data }) {
 
-
   let data1 = data[0][0]
 
   let title = data1.metadata.name
 
+  
   let d = data1.data
 
   let toDate = function (date) {
@@ -46,12 +46,13 @@ export default function page({ data }) {
     heat += toDate(dateRange[i]) + ": " + historical[i] + " | "
   }
   console.log(heat)
-
+ 
   return (<>
-
+    
     <Head>
       <title>R-TCI | Template Page</title>
       <meta name="viewport" content="width=device-width"></meta>
+      <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
     </Head>
 
     {/* Curly braces '{}' mean it is JavaScript inside of HTML. 
@@ -61,17 +62,24 @@ export default function page({ data }) {
     {/*  Add as many paragraphs or titles as necessary.*/}
 
     <h2>Data for {title}.</h2>
-    <h3>Last updated {lastUpdated}</h3>
+    <h3>Last updated {"lastUpdated"}</h3>
+    
+    
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">     </script>
+    
+    <body>
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+    
+    <script>
+    {var myChart = new Chart("myChart", {
+      type: "line",
+      data: {},
+      options: {}
+    })};
+    </script>
 
-
-
-
-    <p>
-      Units: {unit}<br></br>
-      <br></br>Current amount: {current} <br></br>
-      <br></br>{heat}
-    </p>
-
+    </body>
+    
 
   </>)
 }
