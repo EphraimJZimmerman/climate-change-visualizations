@@ -13,11 +13,12 @@ function NavBar() {
       <div className="navbar"></div>
       <header className={navigationStyles.allHeader}>
       <div className={navigationStyles.logo}>
-          <Link href="">
+          {/* <Link href=""> */}
             {/* <Image src="/small_logo.jpg" height={120} width={120} /> */}
-            <a className={navigationStyles.titleLarge}>R-TCI</a>
-          </Link>
-          <h1 className={navigationStyles.dash}>/</h1>
+            {/* <a className={navigationStyles.titleLarge}>(R)TCI</a> */}
+          {/* </Link> */}
+
+          {/* <h1 className={navigationStyles.dash}> /</h1> */}
           <h1 onClick={showSidebar} className={navigationStyles.subTitle}> Home</h1>
       </div>
       <div className={sidebar ? navigationStyles.navContainerActive : navigationStyles.navContainer}>

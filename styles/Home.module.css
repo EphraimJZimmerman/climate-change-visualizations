@@ -1,3 +1,53 @@
 .title {
     font-size: 50px;
 }
+
+.body {
+    margin-left: 100px;
+}
+.mainTitle {
+
+    font-size: 65px;
+    margin-top: 120px;
+    color: #004D40;
+    margin-bottom: 15px;
+
+}
+
+.subLargeTitle {
+    /* margin-top: -30px; */
+    font-size: 20px;
+    text-decoration: underline;
+    /* color: #FF8A65; */
+
+
+}
+
+.para, .paraColor {
+    /* line-height: 40px; */
+    margin-top: 4rem;
+    font-size: 25px;
+    width: 80%;
+
+}
+
+.paraColor {
+    font-weight: bolder;
+    color: #004D40;
+
+}
+
+.next {
+
+    background: none;
+    cursor: pointer;
+    padding-top: 50px;
+
+    display: inline-block;
+  
+    font-size: 1.4rem;
+
+    color: black;
+    /* font-weight: bold; */
+    text-decoration: underline;
+}
