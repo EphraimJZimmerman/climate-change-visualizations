@@ -25,65 +25,57 @@ npm install --save react-chartjs-2 chart.js
 
 */
 
-const chartData = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-  datasets: [
-    {
-      label: 'My First dataset',
-      fill: false,
-      lineTension: 0.1,
-      backgroundColor: 'rgba(75,192,192,0.4)',
-      borderColor: 'rgba(75,192,192,1)',
-      borderCapStyle: 'butt',
-      borderDash: [],
-      borderDashOffset: 0.0,
-      borderJoinStyle: 'miter',
-      pointBorderColor: 'rgba(75,192,192,1)',
-      pointBackgroundColor: '#fff',
-      pointBorderWidth: 1,
-      pointHoverRadius: 5,
-      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-      pointHoverBorderColor: 'rgba(220,220,220,1)',
-      pointHoverBorderWidth: 2,
-      pointRadius: 1,
-      pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40]
+
+
+
+function graphData(i,{ data }) {
+  let data1 = data[i][0]
+  
+  let title = data1.metadata.name
+  let historical = data1.data.outputs.historical
+  let dateRange = data1.data.outputs.dateRange
+  
+  var data_points = new Array()
+  var range = new Array()
+  let id = 0
+
+  for (let i = 0; i < historical.length; i++) {
+    if(historical[i]!=null){
+      data_points[id] = historical[i]
+      range[id] = dateRange[i].toString().substring(0,4)
+      id++
     }
-  ]
-};
+  }
+  return {
+    labels: range,
+    datasets: [
+      {
+        label: title,
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: data_points
+      }
+    ]
+  };
+}
 
 export default function page({ data }) {
-
-
-
-  let data1 = data[0][0]
-
-  let title = data1.metadata.name
-
   
-  let d = data1.data
-
-  let toDate = function (date) {
-    date = date.toString()
-    date = date.substring(4, 6) + "/" + date.substring(6) + "/" + date.substring(0, 4)
-    return date
-  }
-
-  let lastUpdated = toDate(d.refresh.lastUpdated)
-  let current = d.outputs.current
-  let unit = d.outputs.unit
-
-  let historical = d.outputs.historical
-  let dateRange = d.outputs.dateRange
-
-  let heat = ""
-  for (let i = 0; i < historical.length; i++) {
-    heat += toDate(dateRange[i]) + ": " + historical[i] + " | "
-  }
-  console.log(heat)
-
-
- 
   return (<>
     
     <Head>
@@ -92,11 +84,40 @@ export default function page({ data }) {
       <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
     </Head>
 
-    <h2>Data for {title}.</h2>
-    <h3>Last updated {"lastUpdated"}</h3>
-      
+    <h2>Data for {"Graph Visualizations for climate change"}.</h2>
+
     <Line
-      data={chartData}
+      data={graphData(0, { data })}
+      width={400}
+      height={400}
+    />
+    <Line
+      data={graphData(1, { data })}
+      width={400}
+      height={400}
+    />
+    <Line
+      data={graphData(2, { data })}
+      width={400}
+      height={400}
+    />
+    <Line
+      data={graphData(3, { data })}
+      width={400}
+      height={400}
+    />
+    <Line
+      data={graphData(4, { data })}
+      width={400}
+      height={400}
+    />
+    <Line
+      data={graphData(5, { data })}
+      width={400}
+      height={400}
+    />
+    <Line
+      data={graphData(6, { data })}
       width={400}
       height={400}
     />

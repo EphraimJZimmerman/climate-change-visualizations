@@ -15,8 +15,6 @@
 */
 .allHeader {
   font-size: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   position: fixed;
   width: 100%;
   align-items: center;
@@ -31,7 +29,7 @@
   height: 100%;
   justify-content: space-evenly;
   /* border: solid red; */
-  margin-left: 250px;
+  /* margin-left:20%; */
   /* margin-top: 52px; */
 }
 .cross {
@@ -50,20 +48,23 @@
   width: 250px;
   height: 100%;
   position: absolute;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .subTitle,
 .dash {
+
   display: inline;
+  display: none;
   font-size: 1.8rem;
   color: black;
   font-weight: normal;
 }
 .titleLarge {
+  padding-left: 50px;
   font-size: 3rem;
   font-weight: 500;
   font-weight: bold;
-  color: #5a63e0;
+  color: #ff9925;
 }
 .titleLarge:hover {
   border-bottom: black solid 2px;
@@ -151,10 +152,11 @@
     padding-right: 1%;
   }
   .subTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline;
     color: black;
     font-weight: normal;
+    display: inline;
   }
   .dash {
     font-size: 1.7rem;
