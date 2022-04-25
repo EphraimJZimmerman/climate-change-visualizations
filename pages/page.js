@@ -121,7 +121,6 @@ export default function page({ data }) {
       width={400}
       height={400}
     />
-    
  
   </>)
 }
