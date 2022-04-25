@@ -24,7 +24,7 @@ function NavBar() {
         <ul className={navigationStyles.navigationMain}>
           <li className={navigationStyles.navMenu}><Link href="" >Home</Link></li>
           <li className={navigationStyles.navMenu}><Link href="" >Project Files</Link></li>
-          <li className={navigationStyles.navMenu}><Link href="" >Data</Link></li>
+          <li className={navigationStyles.navMenu}><Link href="" >API</Link></li>
           <li className={navigationStyles.navMenu}><Link href="" >The Club</Link></li>
         </ul>
         <div className = {navigationStyles.cross} onClick={hideSidebar}>
