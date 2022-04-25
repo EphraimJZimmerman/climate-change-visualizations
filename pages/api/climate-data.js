@@ -15,8 +15,9 @@ export default function handler(req, res) {
           "limit": 403.5,
           "currentPercentage": 25.6,
           "context": "The maximum is the sea level that is not conducive to life, (i.e. continental submergence).",
-          "sources": ["MAX: https://www.noaa.gov/news-release/us-coastline-to-see-up-to-foot-of-sea-level-rise-by-2050)", "Other ramifications: https://www.jpost.com/environment-and-climate-change/sea-level-rise-could-wipe-out-israeli-beaches-study-688064"],
-          "notes": `-The United States is expected to experience as much sea level rise by the year 2050 as it witnessed in the previous hundred years.
+          "sources": ["https://www.noaa.gov/news-release/us-coastline-to-see-up-to-foot-of-sea-level-rise-by-2050)", "https://www.jpost.com/environment-and-climate-change/sea-level-rise-could-wipe-out-israeli-beaches-study-688064"],
+          "notes": `
+          -The United States is expected to experience as much sea level rise by the year 2050 as it witnessed in the previous hundred years.
           -Sea levels along coastlines will rise an additional 10-12 inches or 25-30 cm by 2050.
           -Direct quote: “This new data on sea rise is the latest reconfirmation that our climate crisis ⁠— as the President has said ⁠— is blinking ‘code red,’” said Gina McCarthy, National Climate Advisor. “We must redouble our efforts to cut the greenhouse gases that cause climate change while, at the same time, help our coastal communities become more resilient in the face of rising seas.”
           -Coastal flooding will cause major cities across the globe, such as Shanghai, New York, Jakaarta, Tel Aviv, San Francisco, and San Diego to sustain immense damage.
@@ -40,39 +41,39 @@ export default function handler(req, res) {
     }],
 
     [{
-        "apiVersion": "1.0",
-        "metadata": {
-          "name": "Arctic Sea Ice Extent",
-          "location": "https://climate.nasa.gov/vital-signs/arctic-sea-ice/",
-          "shortDescription": "Data points showing amounts of arctic ice.",
-          "fullDescription": "Data showing amount of arctic ice, in million square km, from 1979-2022 at the lowest yearly point (September).",
-          "capacity": {
-            "units": "Degrees C temperature anomaly",
-            "limit": 2,
-            "currentPercentage": 46,
-            "context": "Combined with Global Temperature.",
-            "sources": ["https://yaleclimateconnections.org/2021/08/1-5-or-2-degrees-celsius-of-additional-global-warming-does-it-make-a-difference/", "https://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/3", "https://www.theguardian.com/environment/2021/feb/25/atlantic-ocean-circulation-at-weakest-in-a-millennium-say-scientists"],
-            "notes": `
+      "apiVersion": "1.0",
+      "metadata": {
+        "name": "Arctic Sea Ice Extent",
+        "location": "https://climate.nasa.gov/vital-signs/arctic-sea-ice/",
+        "shortDescription": "Data points showing amounts of arctic ice.",
+        "fullDescription": "Data showing amount of arctic ice, in million square km, from 1979-2022 at the lowest yearly point (September).",
+        "capacity": {
+          "units": "Degrees C temperature anomaly",
+          "limit": 2,
+          "currentPercentage": 46,
+          "context": "Combined with Global Temperature.",
+          "sources": ["https://yaleclimateconnections.org/2021/08/1-5-or-2-degrees-celsius-of-additional-global-warming-does-it-make-a-difference/", "https://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/3", "https://www.theguardian.com/environment/2021/feb/25/atlantic-ocean-circulation-at-weakest-in-a-millennium-say-scientists"],
+          "notes": `
             With a 2°C increase, the Arctic Ocean could become ice-free in the summer once every 10 years.
             An ice-free Arctic can lead to accelerated warming as dark blue sea (as opposed to white ice) absorbs more heat from the sun, through a process known as the albedo effect. 
             Melting sea ice in the Arctic also injects cold water into the Atlantic south of Greenland, upsetting Atlantic Ocean circulation. Scientists reported in 2021 that Atlantic Ocean circulation, which includes the Gulf Stream that brings warm weather to the northeastern U.S. and to Europe, is now at its weakest in more than 1,000 years.
             `,
-            "model": null
-          }
-        },
-        "data": {
-          "refresh": {
-            "lastUpdated": 20210901,
-            "frequency": "quinquennially"
-          },
-          "outputs": {
-            "current": 4.92,
-            "unit": "mil km^2",
-            "historical": [null, null, null, null, null, null, null, null, 7.17, 6.96, 7.21, 6.63, 5.64, 4.16, 3.39, 4.67, null],
-            "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
-          }
+          "model": null
         }
-      } ],
+      },
+      "data": {
+        "refresh": {
+          "lastUpdated": 20210901,
+          "frequency": "quinquennially"
+        },
+        "outputs": {
+          "current": 4.92,
+          "unit": "mil km^2",
+          "historical": [null, null, null, null, null, null, null, null, 7.17, 6.96, 7.21, 6.63, 5.64, 4.16, 3.39, 4.67, null],
+          "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
+        }
+      }
+    }],
 
     [{
       "apiVersion": "1.0",
@@ -120,7 +121,7 @@ export default function handler(req, res) {
           "limit": 3,
           "currentPercentage": 43.5,
           "context": "This is when many marine habitats have an very high chance to be affected negatively by the temperature increase. Note that ocean temperatures are slower to rise than air temperatures.",
-          "sources": ["https://nca2018.globalchange.gov/chapter/9/","https://nca2018.globalchange.gov/downloads/NCA4_Ch09_Oceans_Full.pdf","https://www.science.org/doi/10.1126/science.aac4722"],
+          "sources": ["https://nca2018.globalchange.gov/chapter/9/", "https://nca2018.globalchange.gov/downloads/NCA4_Ch09_Oceans_Full.pdf", "https://www.science.org/doi/10.1126/science.aac4722"],
           "notes": `
           Following a hypothetical “Relative Concentration Pathway 8.5” (which is not a projection, but more of an upper bound of projected carbon emissions should no action be taken to limit them), in 2100, the change in temperature will be +3.2 degrees C over pre-industrial levels (defined as 1870-1899). 
           At that point, some things will be screwed, with a heavy weighting of the impact on “economically important” things such as fishing, recreation, habitats, etc.
@@ -128,7 +129,7 @@ export default function handler(req, res) {
           `,
           "model": null
         }
-        
+
       },
       "data": {
         "refresh": {
@@ -192,16 +193,14 @@ export default function handler(req, res) {
           "limit": 126.7,
           "currentPercentage": 20,
           "context": "This is specifically for when we reach the 2°C limit",
-          "sources": ["https://www.co2.earth/global-co2-emissions","https://climatenexus.org/climate-issues/the-carbon-budget/"],
-          "notes": `
-          Quote: “If you accept the 2°C target, the world needs to emit no more than 465 GtC by the time carbon emissions end.  Many developing countries also support a reduction in the target to keep global average temperature increases below 1.5°C above pre-industrial levels.”
-          The source uses gigatonnes of carbon (GtC). 1 GtC is equal to 109 tonnes of carbon or 1012 kg.
-          `,
+          "sources": ["https://www.co2.earth/global-co2-emissions", "https://climatenexus.org/climate-issues/the-carbon-budget/"],
+          "notes": `If you accept the 2°C target, the world needs to emit no more than 465 GtC by the time carbon emissions end.  Many developing countries also support a reduction in the target to keep global average temperature increases below 1.5°C above pre-industrial levels.”
+          The source uses gigatonnes of carbon (GtC). 1 GtC is equal to 109 tonnes of carbon or 1012 kg.`,
           "model": {
             "y1": "y = 0.55x",
-            "y2":"(With year appended) Y = 0.55x - 1073.3",
+            "y2": "(With year appended) Y = 0.55x - 1073.3",
             "timespan": "1995 (23.45 billion tonnes) - 2019 (36.7 billion tonnes)",
-            "timeline": "161 years until limit",
+            "timeline_yr": 161,
             "notes": `In 161 years (year 2183), the annual output of CO2 will be an estimated 126.7 billion metric tons. The global output for carbon has been steadily increasing since the early 20th century and has seen especially high rates of output since the 1980s. 
             This estimate is a linear model derived from data during 1995-2019, and not including years impacted by the response of the COVID-19 pandemic.
             `
@@ -273,15 +272,14 @@ export default function handler(req, res) {
             "limit": 228,
             "currentPercentage": null,
             "context": "Making a rough approximation, assuming the specific heat capacity of sea water is about 3,900 Joules per kg per degrees Celsius and the total mass of the oceans is 1.4×10^21kg this would mean that it would take 5.5×10^24Joules (5.5 trillion trillion Joules) to heat the entire ocean by 1 degrees Celsius (1.8 degrees F).",
-            "sources": ["https://www.climate.gov/news-features/blogs/enso/role-ocean-tempering-global-warming#:~:text=Making%20a%20rough%20approximation%2C%20assuming,Celsius%20(1.8%20degrees%20F)","https://www.nrsc.gov.in/sites/default/files/pdf/oceanproducts/OMT_report.pdf","https://www.epa.gov/climate-indicators/climate-change-indicators-ocean-heat"],
+            "sources": ["https://www.climate.gov/news-features/blogs/enso/role-ocean-tempering-global-warming#:~:text=Making%20a%20rough%20approximation%2C%20assuming,Celsius%20(1.8%20degrees%20F)", "https://www.nrsc.gov.in/sites/default/files/pdf/oceanproducts/OMT_report.pdf", "https://www.epa.gov/climate-indicators/climate-change-indicators-ocean-heat"],
             "notes": `Check the model`,
             "model": {
-              "y1": "y = -10.663229 x + 0.002798 x2",
-              "y2":"(With year appended) Y = 10139.28282 -10.663229 x + 0.002798 x2",
+              "y1": "y = -10.663229x + 0.002798x^2",
+              "y2": "(With year appended) Y = 10139.28282 -10.663229 x + 0.002798 x2",
               "timespan": "1957 (-4.849, 10^22 joules) - 2019 (17.4909, 10^22 joules)",
-              "timeline": "228 years until limit",
-              "notes": `A non-linear regression model is more adequate approach. 
-              The current regression model has a high multiple r-squared of 94%, meaning that it represents the correlation between variables without much variance.
+              "timeline_yr": 228,
+              "notes": `A non-linear regression model is more adequate approach. The current regression model has a high multiple r-squared of 94%, meaning that it represents the correlation between variables without much variance.
                 `
             }
           }

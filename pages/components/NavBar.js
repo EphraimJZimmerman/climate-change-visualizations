@@ -10,8 +10,7 @@ function NavBar() {
   const hideSidebar = () => setSidebar(false)
   return (
     <>
-      <div className="navbar"></div>
-      <header className={navigationStyles.allHeader}>
+    <header className={navigationStyles.allHeader}>
       <div className={navigationStyles.logo}>
           {/* <Link href=""> */}
             {/* <Image src="/small_logo.jpg" height={120} width={120} /> */}
@@ -32,9 +31,6 @@ function NavBar() {
           <AiIcons.AiOutlineClose/>
         </div>
       </div>
-      
-
-  
     </header>
    </>
   )
