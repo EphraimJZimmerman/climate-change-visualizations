@@ -121,11 +121,6 @@ export default function page({ data }) {
       width={400}
       height={400}
     />
-    <Line
-      data={graphData(7, { data })}
-      width={400}
-      height={400}
-    />
     
  
   </>)
