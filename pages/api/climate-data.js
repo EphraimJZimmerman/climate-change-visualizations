@@ -263,6 +263,21 @@ export default function handler(req, res) {
           "location": "https://climate.nasa.gov/vital-signs/global-temperature/",
           "shortDescription": "The data points for change in global temperature",
           "fullDescription": "The change in global surface temperature (in Celcius) relative to 1951-1980 average temperatures per decade."
+          "capacity": {
+            "units": "Years until limit (linear regression model)",
+            "limit": 42,
+            "currentPercentage": 0.49,
+            "context": "Having the annual change in global surface temperature (in Celcius) relative to 1951-1980 being 2 degrees would bring with itself extreme temperatures in Central and Eastern North America, Central and Southern Europe, the Mediterranean (including Southern Europe, Northern Africa and the near-East), Western and Central Asia and Southern Africa. This would imply annual deadly heat waves, about 61 million more people  in Earth’s urban areas would be exposed to severe drought, and an increase in flooding and increased runoff.",
+            "sources": ["https://climate.nasa.gov/vital-signs/global-temperature/"],
+            "notes": ``,
+            "model": {
+              "y1": "y = 0.02102x",
+              "y2":"(With year appended) Y = 0.02102x - 41.51891",
+              "timespan": "1995 (0.45 C) - 2019 (0.98 C)",
+              "timeline": "42 years until limit",
+              "notes": `In 42 years (year 2070), the change in global surface temperature (in Celcius) relative to 1951-1980 will be an estimated 2 degrees celsius. This estimate is a linear model derived from data during 1995-2019, and not including years impacted by the response of the COVID-19 pandemic.`
+            }
+        
         },
         "data": {
           "refresh": {
@@ -271,7 +286,7 @@ export default function handler(req, res) {
           },
           "outputs": {
             "current": 0.92,
-            "unit": "USD",
+            "unit": "C",
             "historical": [0.07, -0.03, 0.01, 0.05, 0.03, -0.02, 0.01, 0.18, 0.14, 0.32, 0.22, 0.43, 0.63, 0.66, 0.64, 0.92, null],
             "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
           }
