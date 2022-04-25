@@ -262,7 +262,7 @@ export default function handler(req, res) {
           "name": "Average Global Temperature _ WHAT IS THIS?",
           "location": "https://climate.nasa.gov/vital-signs/global-temperature/",
           "shortDescription": "The data points for change in global temperature",
-          "fullDescription": "The change in global surface temperature (in Celcius) relative to 1951-1980 average temperatures per decade."
+          "fullDescription": "The change in global surface temperature (in Celcius) relative to 1951-1980 average temperatures per decade.",
           "capacity": {
             "units": "Years until limit (linear regression model)",
             "limit": 42,
@@ -291,6 +291,7 @@ export default function handler(req, res) {
             "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
           }
         }
+      }
       }],
 
     [
