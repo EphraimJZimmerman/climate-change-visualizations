@@ -275,7 +275,7 @@ export default function handler(req, res) {
               "y2":"(With year appended) Y = 0.02102x - 41.51891",
               "timespan": "1995 (0.45 C) - 2019 (0.98 C)",
               "timeline": "42 years until limit",
-              "notes": `In 42 years (year 2070), the change in global surface temperature (in Celcius) relative to 1951-1980 will be an estimated 2 degrees celsius. This estimate is a linear model derived from data during 1995-2019, and not including years impacted by the response of the COVID-19 pandemic.`
+              "notes": `In 42 years (year 2070), the change in global surface temperature (in Celcius) relative to 1951-1980 will be an estimated 2 degrees celsius. This estimate is a linear model derived from data during 1995-2019, and not including years impacted by the response of the COVID-19 pandemic.`,
             }
         
         },
@@ -291,8 +291,8 @@ export default function handler(req, res) {
             "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
           }
         }
-      }
-      }],
+      },
+    }],
 
     [
       {
