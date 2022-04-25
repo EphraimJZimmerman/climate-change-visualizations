@@ -3,8 +3,17 @@
 export default function handler(req, res) {
   res.status(200).json([
 
+    [
+      {
+      "apiVersion": 1.0,
+      "metadata": {
+        "index": 31,
+        "year": 85,
+        "lastUpdated": 20220424,
+      }}],
+
     [{
-      "apiVersion": "1.0",
+      "apiVersion": 1.0,
       "metadata": {
         "name": "Average Global Sea Levels",
         "location": "https://climate.nasa.gov/vital-signs/sea-level/",
@@ -23,7 +32,14 @@ export default function handler(req, res) {
           -Coastal flooding will cause major cities across the globe, such as Shanghai, New York, Jakaarta, Tel Aviv, San Francisco, and San Diego to sustain immense damage.
           -This calculation is a conservative estimate that assumes emissions are reduced substantially within the next few decades.
           `,
-          "model": null
+          "model": {
+            "y1": "y = 0.021x",
+            "y2": "(With year appended) y = 0.02102X - 41.51891",
+            "timespan": "1995 (0.45 C) - 2019 (0.98 C)",
+            "timeline_yr": 42,
+            "notes": `In 42 years (year 2070), the change in global surface temperature (in Celcius) relative to 1951-1980 will be an estimated 2 degrees celsius. This estimate is a linear model derived from data during 1995-2019, and not including years impacted by the response of the COVID-19 pandemic.
+            `
+          }
         }
       },
       "data": {
@@ -92,7 +108,13 @@ export default function handler(req, res) {
           We found that the magnitude of droughts is likely to double in 30% of the global landmass under stringent mitigation policies. 
           If global warming continues at the present rate, water supply-demand deficits would increase fivefold while current 1-in-100-year droughts would occur every two to five years for most of Africa, Australia, southern Europe, southern and central United States, Central America, the Caribbean, north-west China, and parts of Southern America. Approximately two thirds of the global population will experience a progressive increase in drought hazard with warming.
           `,
-          "model": null
+          "model": {
+            "y1": undefined,
+            "y2": undefined,
+            "timespan": undefined,
+            "timeline_yr": undefined,
+            "notes": `Refer to World Capacity for Annual Global Temperature.`
+          }
         }
       },
       "data": {
@@ -127,7 +149,13 @@ export default function handler(req, res) {
           At that point, some things will be screwed, with a heavy weighting of the impact on “economically important” things such as fishing, recreation, habitats, etc.
           Obviously this should be considered in conjunction with other info, such as global temperature, which will likely pass its mark before this one. There's probably some nice synergistic effects with temperature, ice, and sea temperature.
           `,
-          "model": null
+          "model": {
+            "y1": undefined,
+            "y2": undefined,
+            "timespan": undefined,
+            "timeline_yr": undefined,
+            "notes": undefined
+          }
         }
 
       },
@@ -162,7 +190,13 @@ export default function handler(req, res) {
           According to Facu’s data, at around 2100 the world temperature will increase by 1.5 degrees, in 2100 the average increase on SST is (1.1 + 5.4)/2 = 2.15 °C.
           The most recent SST anomaly is 0.46 °C (+ 0.84 ° F), therefore, the temperature in 2100 will be 0.46 + 2.15 = 2.61°C 
           `,
-          "model": null
+          "model": {
+            "y1": undefined,
+            "y2": undefined,
+            "timespan": undefined,
+            "timeline_yr": undefined,
+            "notes": `Refer to World Capacity for Annual Global Temperature.`
+          }
         }
       },
       "data": {
@@ -225,7 +259,7 @@ export default function handler(req, res) {
       {
         "apiVersion": "1.0",
         "metadata": {
-          "name": "Average Global Temperature",
+          "name": "Average Global Temperature _ WHAT IS THIS?",
           "location": "https://climate.nasa.gov/vital-signs/global-temperature/",
           "shortDescription": "The data points for change in global temperature",
           "fullDescription": "The change in global surface temperature (in Celcius) relative to 1951-1980 average temperatures per decade."
