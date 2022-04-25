@@ -3,7 +3,7 @@
     "apiVersion": "1.0", 
     "metadata": {
         "name": "Ocean Heat Content",
-        "location":"https://climate.nasa.gov/vital-signs/ocean-heat/",
+        "location":"https://www.epa.gov/climate-indicators/climate-change-indicators-ocean-heat",
         "shortDescription": "The data points for Ocean Heat Content, starting in 1957.",
         "fullDescription": "The historical array displays the heat content in zettajoules for each of the respective dates. The historicalVar is the error range at each of the respective years in dateRange"
     },
