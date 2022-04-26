@@ -24,7 +24,7 @@ const Footer = () => {
     <footer className={navigationStyles.footer}>
       <ul className={navigationStyles.footerButtonAll}>
         <li className={navigationStyles.footerButton}>Privacy Policy</li>
-        {/* <li className={navigationStyles.footerButton}>Citations </li> */}
+        <li className={navigationStyles.footerButton}>Citations </li>
         {/* <li className={navigationStyles.footerButton}>BUTTON3</li> */}
       </ul>
     </footer>
