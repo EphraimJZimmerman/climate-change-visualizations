@@ -9,6 +9,7 @@ import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart }            from 'react-chartjs-2'
 import {Line} from 'react-chartjs-2';
 
+
 /*
 TASK:
 DATA VISUALIZATIONS for Week of March 28th, 2022
@@ -24,9 +25,6 @@ DATA VISUALIZATIONS for Week of March 28th, 2022
 npm install --save react-chartjs-2 chart.js
 
 */
-
-
-
 
 function graphData(i,{ data }) {
   let data1 = data[i][0]
@@ -74,8 +72,30 @@ function graphData(i,{ data }) {
   };
 }
 
-export default function page({ data }) {
+export default function page({ data }) {  
   
+  let id = 0
+  
+  console.log(id)
+  function next() {
+    if (id == 6){
+      id=0;
+    }
+    else{
+      id++;
+      window.name++;
+    }
+    console.log(id)
+  }
+
+  function previous() {
+    if (id == 0){
+      id=6;
+    }
+    else{
+      id--;
+    }
+  }
   return (<>
     
     <Head>
@@ -85,48 +105,16 @@ export default function page({ data }) {
     </Head>
 
     <h2>Data for {"Graph Visualizations for climate change"}.</h2>
+    <button type = "button" onClick={() => next()} >Next</button>
+
 
     <Line
-      data={graphData(0, { data })}
+      data={graphData(id, { data })}
       width={400}
       height={400}
     />
-    <Line
-      data={graphData(1, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(2, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(3, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(4, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(5, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(6, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(7, { data })}
-      width={400}
-      height={400}
-    />
- 
+
+
   </>)
 }
 
