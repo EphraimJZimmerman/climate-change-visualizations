@@ -294,7 +294,7 @@ export default function handler(req, res) {
       },
     }],
 
-    [
+    [ 
       {
         "apiVersion": "1.0",
         "metadata": {
