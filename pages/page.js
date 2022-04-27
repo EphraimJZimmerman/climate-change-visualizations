@@ -26,8 +26,6 @@ npm install --save react-chartjs-2 chart.js
 */
 
 
-
-
 function graphData(i,{ data }) {
   let data1 = data[i][0]
   
@@ -73,9 +71,57 @@ function graphData(i,{ data }) {
     ]
   };
 }
+function context(i, { data }){
+  let data1 = data[i][0]
+  let context = data1.metadata.fullDescription
 
+  let last_updated = data1.data.refresh.lastUpdated.toString().substring(0,4)
+  let frequency = data1.data.refresh.frequency
+  let current = data1.data.outputs.current
+  let unit  = data1.data.outputs.unit
+  
+  
+  return(<>
+      
+      <br></br>
+      <div><b>Context</b></div>
+      <div>{context}</div>
+      <br></br>
+      <b>Data Description</b>
+      <ul>
+        <li>Date when last updated: {last_updated}</li>
+        <li>Frequency for updates: {frequency}</li>
+        <li>Current: {current} {unit}</li>
+      </ul>
+
+      <div><small>Link for Source: <a href={data1.metadata.location} target="_blank">{data1.metadata.location}</a></small></div>
+  </>)
+
+}
 export default function page({ data }) {
   
+  let id = 1
+  
+  console.log(id)
+  function next() {
+    if (id == 6){
+      id=0;
+    }
+    else{
+      id++;
+    }
+    console.log(id)
+  }
+
+  function previous() {
+    if (id == 0){
+      id=6;
+    }
+    else{
+      id--;
+    }
+    console.log(id)
+  }
   return (<>
     
     <Head>
@@ -85,48 +131,18 @@ export default function page({ data }) {
     </Head>
 
     <h2>Data for {"Graph Visualizations for climate change"}.</h2>
+    <button type = "button" onClick={() => previous()} >Previous</button>
+    <button type = "button" onClick={() => next()} >Next</button>
+    
 
-    <Line
-      data={graphData(0, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(1, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(2, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(3, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(4, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(5, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(6, { data })}
-      width={400}
-      height={400}
-    />
-    <Line
-      data={graphData(7, { data })}
-      width={400}
-      height={400}
-    />
- 
+      <Line
+        id = "67"
+        data={graphData(id, { data })}
+        width={400}
+        height={400}
+      />
+      {context(id, {data})}    
+    
   </>)
 }
 
