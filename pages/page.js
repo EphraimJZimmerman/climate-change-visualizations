@@ -79,14 +79,21 @@ function context(i, { data }){
   let frequency = data1.data.refresh.frequency
   let current = data1.data.outputs.current
   let unit  = data1.data.outputs.unit
-  
+
+  let limit = data1.metadata.capacity.limit
+  let limit_unit =  data1.metadata.capacity.units 
+  let percentage = data1.metadata.capacity.currentPercentage
+
+  /*
+  let linear1 =  data1.metadata.capacity.model.y1
+  let linear2 =  data1.metadata.capacity.model.y2
+  */
   
   return(<>
       
       <br></br>
-      <div><b>Context</b></div>
-      <div>{context}</div>
-      <br></br>
+      <div><b>Context</b></div><br></br>
+      <div>{context}</div><br></br>
       <b>Data Description</b>
       <ul>
         <li>Date when last updated: {last_updated}</li>
@@ -94,10 +101,29 @@ function context(i, { data }){
         <li>Current: {current} {unit}</li>
       </ul>
 
+      <b>World Maximim capacity</b>
+      <ul>
+        <li>Limit: {limit} {limit_unit}</li>
+        <li>Percentage until limit: {percentage}%</li>
+      </ul>
+
       <div><small>Link for Source: <a href={data1.metadata.location} target="_blank">{data1.metadata.location}</a></small></div>
   </>)
 
 }
+function displayer(id, {data}){
+  return(<>
+    <Line
+      data={graphData(id, { data })}
+      width={400}
+      height={400}
+    />
+    {context(id, {data})} 
+    <br></br>
+  </>)
+  
+}
+
 export default function page({ data }) {
   
   let id = 1
@@ -133,22 +159,21 @@ export default function page({ data }) {
     <h2>Data for {"Graph Visualizations for climate change"}.</h2>
     <button type = "button" onClick={() => previous()} >Previous</button>
     <button type = "button" onClick={() => next()} >Next</button>
-    
 
-      <Line
-        id = "67"
-        data={graphData(id, { data })}
-        width={400}
-        height={400}
-      />
-      {context(id, {data})}    
+    {displayer(1, {data})}
+    {displayer(2, {data})}
+    {displayer(3, {data})}
+    {displayer(4, {data})}
+    {displayer(5, {data})}        
+    {displayer(6, {data})}    
+    {displayer(8, {data})}        
     
   </>)
 }
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://climate-change-visualizations-dkx3xwwvm-realeconomy.vercel.app/api/climate-data`)
+  const res = await fetch(`https://climate-change-visualizations.vercel.app/api/climate-data`)
   const data = await res.json()
 
   // Pass data to the page via props
