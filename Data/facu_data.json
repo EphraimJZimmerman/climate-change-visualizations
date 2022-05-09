@@ -5,7 +5,7 @@
         "name": "Average Global Temperature",
         "location":"https://climate.nasa.gov/vital-signs/global-temperature/",
         "shortDescription": "The data points for change in global temperature",
-        "fullDescription": "The change in global surface temperature (in Celcius) relative to 1951-1980 average temperatures per decade."
+        "fullDescription": "The change in global surface temperature (in degrees Celcius) from 1951-1980 using average temperatures recorded decennially by NASA."
     },
     "data": {
         "refresh": {
