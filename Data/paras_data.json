@@ -5,7 +5,7 @@
         "name": "Drought",
         "location":"https://spei.csic.es/map/maps.html#months=1#month=0#year=2022",
         "shortDescription": "This data points drought using the SPEI",
-        "fullDescription": "The the Standardised Precipitation-Evapotranspiration Index (SPEI) is used to measure drought severity is indicated by its intensity and duration, and can recognize the beginning and end of drought episodes from 1940 to present."
+        "fullDescription": "The change in average drought severity as quantified by the SPEI or Standardised Precipitation-Evapotranspiration Index from 1940 to present. The SPEI or Standardised Precipitation-Evapotranspiration Index is a multiscalar drought index based on climatic data that is typically used in climate studies to predict the onset, duration, and magnitude of drought conditions. It is an extension of the ubiquitous Standardized Precipitation Index (SPI) and accounts for both precipitation in addition to potential evapotranspiration (PET) in its calculation of average drought severity."
     },
     "data": {
         "refresh": {
