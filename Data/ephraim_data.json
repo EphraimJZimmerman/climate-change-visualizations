@@ -6,7 +6,7 @@
         "notes": "Accessible by Statista, provided by Global Carbon Project.",
         "cited": "Global Carbon Project; Expert(s) (Friedlingstein et al.)",
         "shortDescription": "This data points to carbon dioxide (CO2) emissions in billion metric tons.",
-        "fullDescription": "Surveyed by the Global Carbon Project from 1940-present (the live/most recent input in 2021 being an estimate), this dataset displays the global carbon dioxide emissions from fossil fuels and industry, which have increased dramatically in the past 80 years."
+        "fullDescription": "Surveyed by the Global Carbon Project from 1940-present (the most recent input in 2021 being an estimate), this dataset displays the global carbon dioxide emissions from fossil fuels and industry, which have increased dramatically in the past 80 years."
     },
     "data": {
         "refresh": {
