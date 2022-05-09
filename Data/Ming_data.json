@@ -5,7 +5,7 @@
         "name": "Average Global Sea Surface Temperature",
         "location":"https://www.epa.gov/climate-indicators/climate-change-indicators-sea-surface-temperature#ref7",
         "shortDescription": "Sea Surface Temperature data collected from the Environmental Protection Agency (EPA)",
-        "fullDescription": "Data Source: National Oceanic and Atmospheric Administration (NOAA). This indicator is based on instrumental measurements of surface water temperature. Due to denser sampling and improvements in sampling design and measurement techniques, newer data are more precise than older data. The earlier trends shown by this indicator have less certainty because of lower sampling frequency and less precise sampling methods. From 1901 through 2020,temperatures rose at an average rate of 0.14°F per decade "
+        "fullDescription": "The average of sea surface temperatures from 1901 to 2020 as recorded quinquennially by the National Oceanic and Atmospheric Administration (NOAA). Due to denser sampling and improvements in sampling design and measurement techniques, newer data are more precise than older data. The earlier trends displayed by this indicator confer less certainty due to lower sampling frequency and less precise sampling methods."
     },
     "data": {
         "refresh": {
