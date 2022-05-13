@@ -1,21 +1,23 @@
-// https://nextjs.org/docs/api-routes/introduction
 
 export default function handler(req, res) {
   res.status(200).json([
 
     [
       {
-      "apiVersion": 1.0,
-      "metadata": {
-        "index": 31,
-        "year": 85,
-        "lastUpdated": 20220424,
-      }}],
+        "apiVersion": 1.0,
+        "metadata": {
+          "description": "Our data shows that there are an estimated 85 years before detrimental climate disasters (index at 31% of total capacity). Index updated annually.",
+          "index": 31,
+          "year": 85,
+          "lastUpdated": 20220513,
+        }
+      }],
 
     [{
       "apiVersion": 1.0,
       "metadata": {
         "name": "Average Global Sea Levels",
+        "author": "Daniel Vito",
         "location": "https://climate.nasa.gov/vital-signs/sea-level/",
         "shortDescription": "The data points for global sea levels spanning more than two decades.",
         "fullDescription": "The average of global sea levels (in Millimeters) from 1995 to 2021 demonstrating a substantial and alarming increase attributable to carbon emissions.",
@@ -26,11 +28,9 @@ export default function handler(req, res) {
           "context": "The maximum is the sea level that is not conducive to life, (i.e. continental submergence).",
           "sources": ["https://www.noaa.gov/news-release/us-coastline-to-see-up-to-foot-of-sea-level-rise-by-2050)", "https://www.jpost.com/environment-and-climate-change/sea-level-rise-could-wipe-out-israeli-beaches-study-688064"],
           "notes": `
-          -The United States is expected to experience as much sea level rise by the year 2050 as it witnessed in the previous hundred years.
-          -Sea levels along coastlines will rise an additional 10-12 inches or 25-30 cm by 2050.
-          -Direct quote: “This new data on sea rise is the latest reconfirmation that our climate crisis ⁠— as the President has said ⁠— is blinking ‘code red,’” said Gina McCarthy, National Climate Advisor. “We must redouble our efforts to cut the greenhouse gases that cause climate change while, at the same time, help our coastal communities become more resilient in the face of rising seas.”
-          -Coastal flooding will cause major cities across the globe, such as Shanghai, New York, Jakaarta, Tel Aviv, San Francisco, and San Diego to sustain immense damage.
-          -This calculation is a conservative estimate that assumes emissions are reduced substantially within the next few decades.
+          The United States is expected to experience as much sea level rise by the year 2050 as it witnessed in the previous hundred years, and sea levels along coastlines will rise an additional 10-12 inches or 25-30 cm by 2050.
+          Direct quote from source: “This new data on sea rise is the latest reconfirmation that our climate crisis ⁠— as the President has said ⁠— is blinking ‘code red,’” said Gina McCarthy, National Climate Advisor. “We must redouble our efforts to cut the greenhouse gases that cause climate change while, at the same time, help our coastal communities become more resilient in the face of rising seas.”
+          Additional notes: Coastal flooding will cause major cities across the globe, such as Shanghai, New York, Jakaarta, Tel Aviv, San Francisco, and San Diego to sustain immense damage. This calculation is a conservative estimate that assumes emissions are reduced substantially within the next few decades.
           `,
           "model": {
             "y1": "y = 0.021x",
@@ -60,6 +60,7 @@ export default function handler(req, res) {
       "apiVersion": "1.0",
       "metadata": {
         "name": "Arctic Sea Ice Extent",
+        "author": "Tal Spector",
         "location": "https://climate.nasa.gov/vital-signs/arctic-sea-ice/",
         "shortDescription": "Data points showing amounts of arctic ice.",
         "fullDescription": "Data showing amount of arctic ice, in million square km, from 1979-2022 at the lowest yearly point (September).",
@@ -70,11 +71,16 @@ export default function handler(req, res) {
           "context": "Combined with Global Temperature.",
           "sources": ["https://yaleclimateconnections.org/2021/08/1-5-or-2-degrees-celsius-of-additional-global-warming-does-it-make-a-difference/", "https://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/3", "https://www.theguardian.com/environment/2021/feb/25/atlantic-ocean-circulation-at-weakest-in-a-millennium-say-scientists"],
           "notes": `
-            With a 2°C increase, the Arctic Ocean could become ice-free in the summer once every 10 years.
-            An ice-free Arctic can lead to accelerated warming as dark blue sea (as opposed to white ice) absorbs more heat from the sun, through a process known as the albedo effect. 
-            Melting sea ice in the Arctic also injects cold water into the Atlantic south of Greenland, upsetting Atlantic Ocean circulation. Scientists reported in 2021 that Atlantic Ocean circulation, which includes the Gulf Stream that brings warm weather to the northeastern U.S. and to Europe, is now at its weakest in more than 1,000 years.
+            With a 2°C increase, the Arctic Ocean could become ice-free in the summer once every 10 years. An ice-free Arctic can lead to accelerated warming as dark blue sea (as opposed to white ice) absorbs more heat from the sun, through a process known as the albedo effect. Melting sea ice in the Arctic also injects cold water into the Atlantic south of Greenland, upsetting Atlantic Ocean circulation. Scientists reported in 2021 that Atlantic Ocean circulation, which includes the Gulf Stream that brings warm weather to the northeastern U.S. and to Europe, is now at its weakest in more than 1,000 years.
             `,
-          "model": null
+          "model": {
+            "y1": null,
+            "y2": null,
+            "timespan": null,
+            "timeline_yr": null,
+            "notes": `Refer to Annual Global Temperature.`
+
+          }
         }
       },
       "data": {
@@ -95,6 +101,7 @@ export default function handler(req, res) {
       "apiVersion": "1.0",
       "metadata": {
         "name": "Drought",
+        "author": "Paras Pandey",
         "location": "https://spei.csic.es/map/maps.html#months=1#month=0#year=2022",
         "shortDescription": "This data points drought using the SPEI",
         "fullDescription": "The the Standardised Precipitation-Evapotranspiration Index (SPEI) is used to measure drought severity is indicated by its intensity and duration, and can recognize the beginning and end of drought episodes from 1940 to present.",
@@ -113,7 +120,7 @@ export default function handler(req, res) {
             "y2": undefined,
             "timespan": undefined,
             "timeline_yr": undefined,
-            "notes": `Refer to World Capacity for Annual Global Temperature.`
+            "notes": `Refer to Annual Global Temperature.`
           }
         }
       },
@@ -135,6 +142,7 @@ export default function handler(req, res) {
       "apiVersion": "1.0",
       "metadata": {
         "name": "Average Global Sea Water Temperature",
+        "author": "Joshua Liu",
         "location": "https://www.epa.gov/climate-indicators/climate-change-indicators-sea-surface-temperature",
         "shortDescription": "Average global sea surface temperature anomaly from 1880 through 2020. Baseline is the 1971 to 2000 average.",
         "fullDescription": "Average global sea surface temperature taken from the NOAA Extended Reconstructed Sea Surface Temperature dataset. Data is taken from ships, floating, and stationary buoys. As collection methods have improved considerably since the 1800s, newer data (NOAA mentions past the 1940s) is more reliable. Sea surface temperature increased during the 20th century and continues to rise. From 1901 through 2020, temperature rose at an average rate of 0.14°F per decade.",
@@ -150,11 +158,11 @@ export default function handler(req, res) {
           Obviously this should be considered in conjunction with other info, such as global temperature, which will likely pass its mark before this one. There's probably some nice synergistic effects with temperature, ice, and sea temperature.
           `,
           "model": {
-            "y1": undefined,
-            "y2": undefined,
-            "timespan": undefined,
-            "timeline_yr": undefined,
-            "notes": undefined
+            "y1": "y = 2.78x",
+            "y2": "(With year appended) y = 2.78x + -5541",
+            "timespan": "1995 (9.5 mm) - 2020 (96.4 mm)",
+            "timeline_yr": 28,
+            "notes": "In 28 years, or by 2050, global sea levels (in millimeters) will rise by approximately 280.16 millimeters. This estimate is a linear model derived from data during 1995-2020, as it excludes years impacted by the response to the COVID-19 pandemic."
           }
         }
 
@@ -176,7 +184,8 @@ export default function handler(req, res) {
     [{
       "apiVersion": "1.0",
       "metadata": {
-        "name": "Average Global Sea Surface Temperature",
+        "name": "Average Global Sea SuMrface Temperature",
+        "author": "Ming Wang",
         "location": "https://www.epa.gov/climate-indicators/climate-change-indicators-sea-surface-temperature#ref7",
         "shortDescription": "Sea Surface Temperature data collected from the Environmental Protection Agency (EPA)",
         "fullDescription": "Data Source: National Oceanic and Atmospheric Administration (NOAA). This indicator is based on instrumental measurements of surface water temperature. Due to denser sampling and improvements in sampling design and measurement techniques, newer data are more precise than older data. The earlier trends shown by this indicator have less certainty because of lower sampling frequency and less precise sampling methods. From 1901 through 2020,temperatures rose at an average rate of 0.14°F per decade ",
@@ -187,15 +196,15 @@ export default function handler(req, res) {
           "context": "This is specifically for when the Ocean temperature heats up by 2.15°C",
           "sources": ["https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature-projections"],
           "notes": `
-          According to Facu’s data, at around 2100 the world temperature will increase by 1.5 degrees, in 2100 the average increase on SST is (1.1 + 5.4)/2 = 2.15 °C.
+          In 2100 the world temperature will increase by 1.5 degrees and the average increase on SST is (1.1 + 5.4)/2 = 2.15 °C.
           The most recent SST anomaly is 0.46 °C (+ 0.84 ° F), therefore, the temperature in 2100 will be 0.46 + 2.15 = 2.61°C 
           `,
           "model": {
-            "y1": undefined,
-            "y2": undefined,
-            "timespan": undefined,
-            "timeline_yr": undefined,
-            "notes": `Refer to World Capacity for Annual Global Temperature.`
+            "y1": "y =  0.015x",
+            "y2": "(With year appended) y = 0.015x-29.8",
+            "timespan": "1995 (0.0966Co)- 2019(0.486Co)",
+            "timeline_yr": 138,
+            "notes": `In 138 years (year 2160), the sea surface temperature will reach an estimated temperature of 2.61 degrees Celsius. This estimate is a linear model derived from data during 1995-2019, and not including years impacted by the response of the COVID-19 pandemic.`
           }
         }
       },
@@ -217,6 +226,7 @@ export default function handler(req, res) {
       "apiVersion": "1.0",
       "metadata": {
         "name": "Global Emissions of Carbon Dioxide",
+        "author": "Ephraim Zimmerman",
         "location": "https://www.statista.com/statistics/276629/global-co2-emissions/",
         "notes": "Accessible by Statista, provided by Global Carbon Project.",
         "cited": "Global Carbon Project; Expert(s) (Friedlingstein et al.)",
@@ -260,6 +270,7 @@ export default function handler(req, res) {
         "apiVersion": "1.0",
         "metadata": {
           "name": "Average Global Temperature",
+          "author": "Facundo Roitman",
           "location": "https://climate.nasa.gov/vital-signs/global-temperature/",
           "shortDescription": "The data points for change in global temperature",
           "fullDescription": "The change in global surface temperature (in Celcius) relative to 1951-1980 average temperatures per decade.",
@@ -267,38 +278,39 @@ export default function handler(req, res) {
             "units": "Years until limit (linear regression model)",
             "limit": 42,
             "currentPercentage": 0.49,
-            "context": "Having the annual change in global surface temperature (in Celcius) relative to 1951-1980 being 2 degrees would bring with itself extreme temperatures in Central and Eastern North America, Central and Southern Europe, the Mediterranean (including Southern Europe, Northern Africa and the near-East), Western and Central Asia and Southern Africa. This would imply annual deadly heat waves, about 61 million more people  in Earth’s urban areas would be exposed to severe drought, and an increase in flooding and increased runoff.",
+            "context": "World capacity for annual global temperature anomaly: 2°C",
             "sources": ["https://climate.nasa.gov/vital-signs/global-temperature/"],
-            "notes": ``,
+            "notes": `Having the annual change in global surface temperature (in Celcius) relative to 1951-1980 being 2 degrees would bring with itself extreme temperatures in Central and Eastern North America, Central and Southern Europe, the Mediterranean (including Southern Europe, Northern Africa and the near-East), Western and Central Asia and Southern Africa. This would imply annual deadly heat waves, about 61 million more people  in Earth’s urban areas would be exposed to severe drought, and an increase in flooding and increased runoff.`,
             "model": {
               "y1": "y = 0.02102x",
-              "y2":"(With year appended) Y = 0.02102x - 41.51891",
+              "y2": "(With year appended) Y = 0.02102x - 41.51891",
               "timespan": "1995 (0.45 C) - 2019 (0.98 C)",
               "timeline": "42 years until limit",
               "notes": `In 42 years (year 2070), the change in global surface temperature (in Celcius) relative to 1951-1980 will be an estimated 2 degrees celsius. This estimate is a linear model derived from data during 1995-2019, and not including years impacted by the response of the COVID-19 pandemic.`,
             }
-        
-        },
-        "data": {
-          "refresh": {
-            "lastUpdated": 20220201,
-            "frequency": "annual"
-          },
-          "outputs": {
-            "current": 0.92,
-            "unit": "C",
-            "historical": [0.07, -0.03, 0.01, 0.05, 0.03, -0.02, 0.01, 0.18, 0.14, 0.32, 0.22, 0.43, 0.63, 0.66, 0.64, 0.92, null],
-            "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
-          }
-        }
-      },
-    }],
 
-    [ 
+          },
+          "data": {
+            "refresh": {
+              "lastUpdated": 20220201,
+              "frequency": "annual"
+            },
+            "outputs": {
+              "current": 0.92,
+              "unit": "C",
+              "historical": [0.07, -0.03, 0.01, 0.05, 0.03, -0.02, 0.01, 0.18, 0.14, 0.32, 0.22, 0.43, 0.63, 0.66, 0.64, 0.92, null],
+              "dateRange": [19420101, 19470101, 19520101, 19570101, 19620101, 19670101, 19720101, 19770101, 19820101, 19870101, 19920101, 19970101, 20020101, 20070101, 20120101, 20170101, 20220101]
+            }
+          }
+        },
+      }],
+
+    [
       {
         "apiVersion": "1.0",
         "metadata": {
           "name": "Ocean Heat Content",
+          "author": "Gabriel Abreu and Joshua Cohen",
           "location": "https://climate.nasa.gov/vital-signs/ocean-heat/",
           "shortDescription": "The data points for Ocean Heat Content, starting in 1957.",
           "fullDescription": "The historical array displays the heat content in zettajoules for each of the respective dates. The historicalVar is the error range at each of the respective years in dateRange",
@@ -308,14 +320,13 @@ export default function handler(req, res) {
             "currentPercentage": null,
             "context": "Making a rough approximation, assuming the specific heat capacity of sea water is about 3,900 Joules per kg per degrees Celsius and the total mass of the oceans is 1.4×10^21kg this would mean that it would take 5.5×10^24Joules (5.5 trillion trillion Joules) to heat the entire ocean by 1 degrees Celsius (1.8 degrees F).",
             "sources": ["https://www.climate.gov/news-features/blogs/enso/role-ocean-tempering-global-warming#:~:text=Making%20a%20rough%20approximation%2C%20assuming,Celsius%20(1.8%20degrees%20F)", "https://www.nrsc.gov.in/sites/default/files/pdf/oceanproducts/OMT_report.pdf", "https://www.epa.gov/climate-indicators/climate-change-indicators-ocean-heat"],
-            "notes": `Check the model`,
+            "notes": null,
             "model": {
               "y1": "y = -10.663229x + 0.002798x^2",
               "y2": "(With year appended) Y = 10139.28282 -10.663229 x + 0.002798 x2",
               "timespan": "1957 (-4.849, 10^22 joules) - 2019 (17.4909, 10^22 joules)",
               "timeline_yr": 228,
-              "notes": `A non-linear regression model is more adequate approach. The current regression model has a high multiple r-squared of 94%, meaning that it represents the correlation between variables without much variance.
-                `
+              "notes": `A non-linear regression model is more adequate approach. The current regression model has a high multiple r-squared of 94%, meaning that it represents the correlation between variables without much variance. 228 years until limit (year 2250).`
             }
           }
         },
