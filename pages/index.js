@@ -28,34 +28,45 @@ export default function Home() {
       <meta name="viewport" content="width=device-width"></meta>
     </Head>
 
-    <NavBar />
+    {/* <NavBar /> */}
 
     <body className={styles.body}>
 
-      <br />
-      <h1 className={styles.mainTitle}>Welcome to R-TCI</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+      {/* <h1 className={styles.mainTitle}>Welcome to R-TCI</h1> */}
+      <h3 className={styles.subLargeTitle}>About the Project</h3>
 
 
       <p className={styles.para}>
-        ...
+      The ramifications of climate change can be daunting for many to grasp. 
+      Our climate change index will measure and aggregate the severity of climate change in real time using data 
+      compiled from various reputable sources, such as government agencies and academic institutions. 
+      Our visualizations of the many elements that impact our planets climate  will illustrate the capacity for further distress prior to an inflection point, or a point of no return. 
       </p>
+
+
 
       <p className={styles.paraColor}>
-        ...
+      R-TCI is a standard index scaled 1-100 of the most significant factors underlying climate change. This will make it easier to conceptualize and understand the nature and urgency of the current climate crises.
+
 
       </p>
 
 
-      <a className={styles.next}>
+      {/* <a className={styles.viewButton}> */}
 
 
-        View Statistics and Index
-        {/* 
+        {/* View Statistics and Index */}
+{/* 
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 13">
           <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
         </svg> */}
 
-      </a>
+      {/* </a> */}
 
       {/* 
       <Link href="/">
@@ -63,7 +74,7 @@ export default function Home() {
       </Link> */}
 
     </body>
-    <Footer />
+    {/* <Footer /> */}
 
 
   </>)

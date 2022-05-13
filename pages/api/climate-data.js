@@ -134,10 +134,10 @@ export default function handler(req, res) {
     [{
       "apiVersion": "1.0",
       "metadata": {
-        "name": "Average Global Sea Surface Temperature",
+        "name": "Average Global Sea Water Temperature",
         "location": "https://www.epa.gov/climate-indicators/climate-change-indicators-sea-surface-temperature",
         "shortDescription": "Average global sea surface temperature anomaly from 1880 through 2020. Baseline is the 1971 to 2000 average.",
-        "fullDescription": "Average global sea surface temperature taken from the NOAA Extended Reconstructed Sea Surface Temperature dataset. Data is taken from ships, floating, and stationary bouys. As collection methods have improved considerably since the 1800s, newer data (NOAA mentions past the 1940s) is more reliable. Sea surface temperature increased during the 20th century and continues to rise. From 1901 through 2020, temperature rose at an average rate of 0.14°F per decade.",
+        "fullDescription": "Average global sea surface temperature taken from the NOAA Extended Reconstructed Sea Surface Temperature dataset. Data is taken from ships, floating, and stationary buoys. As collection methods have improved considerably since the 1800s, newer data (NOAA mentions past the 1940s) is more reliable. Sea surface temperature increased during the 20th century and continues to rise. From 1901 through 2020, temperature rose at an average rate of 0.14°F per decade.",
         "capacity": {
           "units": "Degrees C temperature anomaly (from pre-industrial)",
           "limit": 3,
@@ -259,7 +259,7 @@ export default function handler(req, res) {
       {
         "apiVersion": "1.0",
         "metadata": {
-          "name": "Average Global Temperature _ WHAT IS THIS?",
+          "name": "Average Global Temperature",
           "location": "https://climate.nasa.gov/vital-signs/global-temperature/",
           "shortDescription": "The data points for change in global temperature",
           "fullDescription": "The change in global surface temperature (in Celcius) relative to 1951-1980 average temperatures per decade.",

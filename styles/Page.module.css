@@ -4,7 +4,7 @@
 
 .body {
     margin-left: 100px;
-    width: 80%;
+    /* width: 80%; */
 }
 
 
@@ -18,25 +18,72 @@
 }
 
 .subLargeTitle {
-    /* margin-top: -20px; */
+    margin-top: 10%;
     font-size: 30px;
     /* text-decoration: underline; */
     /* color: #FF8A65; */
-
-
 }
 
+.showHide {
+    /* margin-top: %; */
+    font-size: 18px;
+    /* text-decoration: underline; */
+    /* color: #FF8A65; */
+    display: inline;
+    color: gray;
+    padding-left: 5px;
+    font-weight: 600;
+    text-decoration: underline;
+
+    
+}
+
+.sideBar {
+    background-color: red;
+    width: 30%;
+    display: inline;
+}
+
+.number, .year {
+    font-size: 75px;
+    color: #549c99;
+    /* color: #9c5454; */
+
+    display: inline-block;
+    height: 50px;
+    margin-top: -10px;
+}
+
+.year {
+    font-size: 75px;
+    /* color: #549c99; */
+
+    display: inline-block;
+    height: 50px;
+    margin-top: -10px;
+}
+
+
+.numberContext, .yearContext {
+    display: inline;
+    color: rgb(51, 90, 88);
+
+}
+.yearContext {
+    
+}
 .para, .paraColor {
     /* line-height: 40px; */
     /* margin-top: 4rem; */
     font-size: 20px;
-    width: 80%;
+    width: 50%;
 
 }
 
 .paraColor {
     font-weight: bolder;
     color: rgb(51, 90, 88);
+    
 
 }
 
