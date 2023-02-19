@@ -6,4 +6,6 @@ Project description:<br>
 
 <i>
 The ramifications of climate change can be daunting for many to grasp. Our climate change index will measure and aggregate the severity of climate change in real time using data compiled from various reputable sources, such as government agencies and academic institutions. Our visualizations of the many elements that impact our planet's climate will illustrate the capacity for further distress prior to an inflection point, or a point of no return.
-</i>
+</i><br><br><b>
+
+This repository holds the code for the API we built. Our findings our available via the RapidAPI marketplace: https://rapidapi.com/ezimmerman/api/real-time-climate-index. You can also view it as raw JSON (with a status of 200 if queried properly): https://climate-change-visualizations.vercel.app/api/climate-data.</b>
